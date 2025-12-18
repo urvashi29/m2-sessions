@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+
+    <style>
+      .test {
+        background-color: pink;
+      }
+
+      .sample {
+        background-color: pink;
+        color: teal;
+      }
+
+      .styleDiv {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p id="sample">Website</p>
+    <button onclick="showAlert()">Click</button>
+    <button onclick="addToCart()">Add to Cart</button>
+
+    <!-- Mouse events  -->
+    <!-- try these 1 by 1 -->
+    <!-- <p onmouseover="mouseEvent()" class="test">Lorem, ipsum.</p> -->
+    <!-- <p onmouseenter="mouseEvent()" class="test">Lorem, ipsum.</p> -->
+    <!-- <p onmouseleave="mouseEvent()" class="test">Lorem, ipsum.</p> -->
+    <!-- <p onmouseout="mouseEvent()" class="test">Lorem, ipsum.</p> -->
+
+    <!-- Form events  -->
+    <form>
+      <label for="first"> First Name</label>
+
+      <!-- Key Events:try these 1 by 1   -->
+      <!-- <input
+        type="text"
+        placeholder="Please enter name"
+        id="first"
+        name="first"
+        onkeyup="keyEvent()"
+      /> -->
+
+      <!-- <input
+        type="text"
+        placeholder="Please enter name"
+        id="first"
+        name="first"
+        onkeydown="keyEvent()"
+      /> -->
+
+      <input
+        type="text"
+        placeholder="Please enter name"
+        id="first"
+        name="first"
+        onkeypress="keyEvent()"
+      />
+
+      <!-- onblur="changeBg()" -->
+      <input
+        type="email"
+        placeholder="Please enter email"
+        id="email"
+        onfocus="changeBg()"
+        autofocus
+      />
+
+      <input
+        type="tel"
+        placeholder="Please enter contact"
+        id="contact"
+        onchange="captureInput()"
+      />
+    </form>
+    <button type="button" onclick="submit()">Submit</button>
+
+    <p id="success"></p>
+
+    <!-- form validation  -->
+    <h2>Form</h2>
+    <form>
+      <label>name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter name"
+        onchange="validateName()"
+      />
+      <p id="name-error" style="color: red"></p>
+
+      <label>email</label>
+      <input type="email" id="emailnew" placeholder="Enter email" />
+
+      <label>Contact</label>
+      <input type="text" id="contactnew" placeholder="Enter contact" />
+
+      <button type="button" onclick="validate()">Submit</button>
+    </form>
+
+    <!-- ClassList  -->
+    <div class="sample" id="class-test">Lorem ipsum dolor sit.</div>
+    <button onclick="changeClass()">Class Change</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
