@@ -3,9 +3,11 @@ import React, { useState } from "react";
 const Counter = ({ firstName }) => {
   const [counter, setCounter] = useState(0);
 
-  const handleInc = async () => {
-    setCounter((prev) => prev + 1);
-    console.log(counter);
+  const handleInc = () => {
+    // setCounter(count + 1);//1
+    // setCounter(count + 1);//1
+    setCounter((prev) => prev + 1); //1
+    setCounter((prev) => prev + 1); //2
   };
 
   return (
