@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <Form addUser={addUser} />
-      <Display users={users}/>
+      <Display users={users} />
     </>
   );
 };
