@@ -1,7 +1,14 @@
 import React from "react";
 import Card from "../components/Card";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate();
+
+  setTimeout(() => {
+    navigate("/products");
+  }, 2000);
+
   return (
     <>
       <Card email="admin@gmail.com" bgColor="pink" flag="contact" />

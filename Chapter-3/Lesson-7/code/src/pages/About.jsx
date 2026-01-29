@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
@@ -8,6 +8,9 @@ const About = () => {
       <p>Vision & Mission</p>
       <h2>Why Us?</h2>
       About
+      <p>
+        If you have any queries, <Link to="/contact-us">Click here</Link>
+      </p>
     </>
   );
 };
