@@ -4,13 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 import { Provider } from "react-redux";
-import { applyMiddleware, combineReducers, createStore } from "redux";
-import reducer from "./reducer/reducer.js";
-import {thunk} from "redux-thunk";
-// import userReducer from "./reducer/userReducer.js";
-
-// combineReducers(reducer,userReducer
-const store = createStore(reducer, applyMiddleware(thunk));
+import { store } from "./store.js";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

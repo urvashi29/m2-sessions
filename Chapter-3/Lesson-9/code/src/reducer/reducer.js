@@ -1,12 +1,13 @@
 import * as actions from "../actions/actionType";
 
 //central storage (state)
-const initState = {
+export const initState = {
   counter: 0,
   employees: [
     { id: 1, salary: 89090 },
     { id: 2, salary: 787980 },
   ],
+  users: [],
 };
 
 // reducer is a function which returns application state. Also, update will happen here
@@ -18,6 +19,8 @@ const reducer = (state = initState, action) => {
       return { ...state, counter: state.counter + action.payload };
     case actions.DEC:
       return { ...state, counter: state.counter - action.payload };
+    case actions.GET_USERS:
+      return { ...state, users: action.payload.httpResponse };
     default:
       return state;
   }
