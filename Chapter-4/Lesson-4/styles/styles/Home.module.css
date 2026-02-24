@@ -1,0 +1,12 @@
+.container {
+  background-color: teal;
+  color: white;
+  font-size: 20px;
+}
+
+.button {
+  padding: 5px;
+  background-color: tomato;
+  color: white;
+  border: none;
+}
